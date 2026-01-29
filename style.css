@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Bungee');
+
+* {box-sizing: border-box;
+}
+
+body {box-sizing: border-box; 
+    background-color: black;
+        display: flex;
+        flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;}
+
+main {
+    display: flex;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+        
+}
+
+.imgContainer {display: flex;
+}
+
+h1 {padding: 100px;
+    margin: 0;
+    font-family: 'Bungee';
+    background-color: rgb(238, 237, 235);}
+
+.formContainer {font-family: 'Tangerine';}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
