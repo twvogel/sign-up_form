@@ -15,22 +15,85 @@ body {box-sizing: border-box;
 main {
     display: flex;
     background-color: white;
-    margin: 0;
+    margin-left: 300px;
+    margin-right: 300px;
     padding: 0;
-        
 }
 
-.imgContainer {display: flex;
+/*leftside*/
+.left {
+    display: flex;
+    flex-direction: row;
+    min-width: 1000px;
+    background-image: url('images/leaf.avif');
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
 }
+
+.imgContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: black;
+    opacity: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+#ilogo {
+    height: 100px;
+}
+
+#logo {
+    color: white;
+    font-size: 5em;
+}
+
+/*right side*/
 
 h1 {padding: 100px;
     margin: 0;
     font-family: 'Bungee';
     background-color: rgb(238, 237, 235);}
 
-.formContainer {font-family: 'Tangerine';}
-
-form {
+.formContainer {
     display: flex;
     flex-direction: column;
+    font-family: 'Tangerine';}
+
+legend {font-size: 40px;
+    padding-bottom: 15px;}
+
+form {
+    font-size: 30px;
+    padding: 50px;
+}
+
+.bottom {background-color: rgb(238, 237, 235) ;
+        padding: 20px;
+    font-size: 2rem;}
+
+button {
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: green;
+}    
+
+fieldset {
+    padding: 20px;
+}
+
+.iform {
+    padding: 10px;
+}
+
+.name, .extra {display: flex;}
+
+input:valid {border-color: green;}
+
+input:invalid {
+    border-color: red;
 }

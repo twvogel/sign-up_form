@@ -9,20 +9,58 @@
 </head>
 <body>
     <main>
-        <div class="imgContainer">
-            <img src="images/leaf.avif"/>
+        <div class="left">
+            <div class="imgContainer">
+                <img id="ilogo" src="images/helmet.png">
+                <div id="logo">ODIN</div>
+            </div>    
         </div>
-        <div class="container">
+        <div class="right">
             <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>
-                Sign up <i>now </i>to get started<br><br>
+                Sign up <i>now </i>&nbsp;to get started<br><br>
             
-            You know you want to</h1>
+                You know you want to</h1>
             <div class="formContainer">
              <form action="#">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName">
-                
+                <legend>Let's do this!</legend>
+                <fieldset>
+                    <div class="name">
+                    <div class="iform">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" minlength="3">
+                    </div>
+                    <div class = "iform">   
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" minlength="3">
+                    </div>
+                    </div>    
+                    <div class = "extra">
+                    <div class = "iform">  
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" minlength="3">
+                    </div>    
+                    <div class = "iform">
+                        <label for="phoneNumber">Phone Number</label>
+                        <input type="text" id="phoneNumber" name="phoneNumber" minlength="10">
+                    </div>
+                    </div>    
+                </fieldset>
+                <fieldset>
+                    <div class = "iform">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" minlength="5">
+                    </div>    
+                    <div class = "iform">    
+                        <label for="cPassword">Confirm Password</label>
+                        <input type="password" id="cPassword" name="cpassword" minlength="5">
+                    </div>    
+                </fieldset>
              </form>     
+            </div>
+            <div class="bottom">
+                <button type="reset">Reset</button> 
+                <button type="submit">Create Account</button>    
+                <p>Already have an account? <a href="#">Log In</a></p>
             </div>
         </div>
     </main>
